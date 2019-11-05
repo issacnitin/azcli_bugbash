@@ -19,6 +19,5 @@ jobs:
       with:
         azcliversion: 2.0.68
         inlineScript: |
-          az account show
-          az storage -h
+          az vm create -n MyVM -g MyResourceGroup --admin-password ${{ secrets.Azure_VM_Password }} 
  
