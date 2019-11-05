@@ -19,5 +19,5 @@ jobs:
       with:
         azcliversion: 2.0.68
         inlineScript: |
-          az vm create -n MyVM -g MyResourceGroup --admin-password ${{ secrets.Azure_VM_Password }} 
+          az vm create -n MyVM -g MyResourceGroup --admin-password ${{ secrets.Azure_VM_Password }} --image UbuntuLTS
  
