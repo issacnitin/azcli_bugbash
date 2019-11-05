@@ -1,5 +1,7 @@
-on: [push]
-
+on:
+  issue_comment:
+    types: [created, deleted] 
+    
 name: Azure/CLI - the actual repo
 
 jobs:
